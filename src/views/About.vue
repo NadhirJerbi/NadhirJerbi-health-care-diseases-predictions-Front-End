@@ -131,7 +131,7 @@
               console.log(data);
               
               this.prob= parseInt(data.prob)
-              if (data.state == 1)
+              if (data.state == 0)
                 {this.Nodisease = true
                 this.prob=data.prob}
               else

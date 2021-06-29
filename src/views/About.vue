@@ -30,7 +30,7 @@
         </v-select>
 
         <v-alert v-if="disease" dense text type="error">
-          you chances of getting the disease. Please consult the doctor immediately with propability of {{probmsg}}
+          you chances of getting the disease with propability of {{probmsg}} . Please consult the doctor immediately 
         </v-alert>
 
         <v-alert v-if="Nodisease" dense text type="success">

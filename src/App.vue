@@ -1,8 +1,7 @@
 <template>
   <v-app>
        <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">Heart</router-link>
+     <h1> Heart Disease Prediction  </h1>
     </div>
 
     <v-main>

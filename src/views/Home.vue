@@ -165,8 +165,7 @@
       getAPI
         .get("/", )
         .then(response => {
-          console.log("Recieved data successfully");
-          console.log(response.data);
+          console.log("ready  ready to get data");
         })
         .catch(err => {
           console.log(err);

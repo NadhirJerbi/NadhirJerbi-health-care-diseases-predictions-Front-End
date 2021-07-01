@@ -133,9 +133,11 @@
               this.prob= parseInt(data.prob)
               if (data.state == 0)
                 {this.Nodisease = true
+                this.disease = false
                 this.prob=data.prob}
               else
                 {this.disease = true
+                this.Nodisease = false
                 this.prob=data.prob}
             })
             .catch(err => {

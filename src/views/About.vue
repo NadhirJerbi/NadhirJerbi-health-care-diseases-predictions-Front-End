@@ -30,7 +30,7 @@
         </v-select>
 
         <v-alert v-if="disease" dense text type="error">
-          you chances of getting the disease with propability of {{probmsg}} . Please consult the doctor immediately 
+          you chances of getting the disease with propability of {{probmsg}} %. Please consult the doctor immediately 
         </v-alert>
 
         <v-alert v-if="Nodisease" dense text type="success">
@@ -94,21 +94,21 @@
       restecg: null,
       restecgitems: [{
         text: 'having ST-T wave abnormality',
-        value: 1
+        value: 2
       }, {
         text: 'Normal',
-        value: 0
+        value: 1
       }, {
         text: 'showing probable or definite left ventricular hypertrophy',
-        value: 2
+        value: 3
       }],
       fbs: null,
       fbsitems: [{
         text: 'Fasting Blood Sugar < 120 mg/dl',
-        value: 0
+        value: 1
       }, {
         text: 'Fasting Blood Sugar > 120 mg/dl',
-        value: 1
+        value: 2
       }],
     }),
 
@@ -119,8 +119,8 @@
             cp: this.cp,
             trestbps: this.trestbps,
             chol: this.chol,
-            fbs: this.fbs,
-            restecg: this.restecg,
+            fbs: this.fbs-1,
+            restecg: this.restecg-1,
             thalach: this.thalach,
             exang: this.exang
           }

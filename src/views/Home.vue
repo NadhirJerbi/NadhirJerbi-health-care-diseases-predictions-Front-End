@@ -164,8 +164,9 @@
     mounted() {
       getAPI
         .get("/", )
-        .then(response => {
+        .then(() => {
           console.log("ready  ready to get data");
+
         })
         .catch(err => {
           console.log(err);
